@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barathon Chouffe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFEB3B;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    .message {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    .itineraire-button {
+      display: inline-block;
+      background-color: #f57c00;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+    .itineraire-button:hover {
+      background-color: #e65100;
+    }
+    .itineraire {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>BARATHON CHOUFFE</h1>
+  <iframe src="https://www.youtube.com/embed/FOf7BJRhPHM" allowfullscreen></iframe>
+  <div class="message">
+    ⚠️ <strong>TRAQUENARD</strong><br>
+    Oyez oyez !! <br>
+    Vous êtes conviés au seul et unique Barathon 100% Chouffe de France, fruit de 3 ans de repérages dans notre belle ville. <br>
+    <strong>Le vendredi 20 décembre</strong> : un bar de départ, un bar d’arrivée et entre 4 et 7 bars à découvrir sur le chemin (à moduler en fonction de la vaillance des troupes).<br>
+    <strong>Save the date 🍻</strong><br><br>
+    PS : les non buveurs de Chouffe sont acceptés, on n’est pas des sauvages.
+  </div>
+  <button class="itineraire-button" onclick="toggleItineraire()">Itinéraire ⬇️</button>
+  <div class="itineraire" id="itineraire">
+    <p>Funky Monkey</p>
+    <p>BerThom</p>
+    <p>Dam’s Pub</p>
+    <p>Wallace</p>
+    <p>The Smoking Dog Pub</p>
+    <p>La Feria</p>
+  </div>
+  <script>
+    function toggleItineraire() {
+      const itineraire = document.getElementById('itineraire');
+      if (itineraire.style.display === 'none' || itineraire.style.display === '') {
+        itineraire.style.display = 'block';
+      } else {
+        itineraire.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
