@@ -76,6 +76,7 @@
       const itineraire = document.getElementById('itineraire');
       if (itineraire.style.display === 'none' || itineraire.style.display === '') {
         itineraire.style.display = 'block';
+        itineraire.scrollIntoView({ behavior: 'smooth' });
       } else {
         itineraire.style.display = 'none';
       }
